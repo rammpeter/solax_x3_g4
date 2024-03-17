@@ -22,7 +22,7 @@ produces
 ## Get interpreted values
 To get human readable values for some of the parameters here are two Ruby scripts
 ### explain_solax_x3_g4.rb 
-Call this script with command line parameters serial number and host name / IP address:
+Call this script with command line parameters serial number and host name / IP address for hybrid inverter:
 ```
 > ./explain_solax_x3_g4.rb 192.168.178.xx Sxxxxxxxxx
 ```
