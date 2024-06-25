@@ -90,18 +90,22 @@ end
 # parse_32(35, 1, @data[34], @data[35], 'W', 'Grid AC power: + export, - import', signed_32: true)
 
 parse(0,  1,   '-', 'Run mode: 
-                          0: "Available",
-                          1: "Preparing",
-                          2: "Charging",
-                          3: "Finishing",
-                          4: "Fault Mode",
-                          5: "Unavailable",
-                          6: "Reserved",
-                          7: "Suspended EV",
-                          8: "Suspended EVSE",
-                          9: "Update",
-                         10: "RFID Activation"')
-parse(1)
+                          0: Available,
+                          1: Preparing,
+                          2: Charging,
+                          3: Finishing,
+                          4: Fault Mode,
+                          5: Unavailable,
+                          6: Reserved,
+                          7: Suspended EV,
+                          8: Suspended EVSE,
+                          9: Update,
+                         10: RFID Activation')
+parse(1,  1,   '-', 'Charge mode:
+                          0: Stop
+                          1: Fast
+                          2: Eco
+                          3: Green')
 parse(2,  100, 'V', 'AC voltage phase 1')
 parse(3,  100, 'V', 'AC voltage phase 2')
 parse(4,  100, 'V', 'AC voltage phase 3')
